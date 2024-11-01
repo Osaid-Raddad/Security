@@ -1,0 +1,56 @@
+@import "./base.css";
+
+
+/* Welcome section*/
+
+.welcome{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    padding: 250px;
+}
+
+.welcome h1{
+    font-size: 80px;
+    font-weight: bold;
+    animation-delay: 2s;
+}
+
+.welcome p{
+    font-size: 24px;
+    animation-delay: 4s;
+}
+
+.welcome a{
+    border: 2px solid rebeccapurple;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+    background-color: blueviolet;
+    animation-delay: 6s; 
+}
+
+.welcome a:hover{
+    background-color: red;
+}
+
+/* Animation */
+.welcome h1,
+.welcome p,
+.welcome a {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
